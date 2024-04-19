@@ -31,7 +31,7 @@ jobs:
 
       - name: Sync Files
         run: |
-          rsync -av --exclude '.git/' source/ gitpage/source/_posts/
+          rsync -av --exclude '.git/' source/notes gitpage/source/_posts/
       
       - name: Commit and Push Changes
         run: |
